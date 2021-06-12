@@ -13,12 +13,18 @@ import { UserProvider } from './components/userContext';
 function App() {
   return (
     <div className="App">
+      
+
       {/* <UserProvider value="Anurag" >
       <ComponentsC />
       </UserProvider> */}
+
       {/* <PortalDemo/> */}
-      {/* <ClickCounter />
-      <HoverCounter /> */}
+
+      <ClickCounter />
+      <HoverCounter />
+
+
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={(isLoggedIn) => isLoggedIn ? 'Anurag' : 'Guest'} /> */}
@@ -26,6 +32,8 @@ function App() {
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount}/>
         )} />
+
+        
       <Counter
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount}/>
